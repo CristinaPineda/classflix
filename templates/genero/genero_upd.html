@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <title>CRISflix</title>
+
+    <link href="{% static 'css/menu.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/crud.css' %}" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+<div id="crisflix"><a href="https://fontmeme.com/netflix-font/"><img src="https://fontmeme.com/permalink/200813/7f16c487dc568f70a735fcbddfcb766f.png" alt="netflix-font" border="0"></a></div>
+{% include "../menu.html" %}
+<main>
+    <div class="divForm">
+        <div>
+            <form onsubmit="/genero" id="form-genero" method="post">
+                {{form}}
+                {% csrf_token %}
+                <input type="submit" id="submit-button" value="Alterar"/>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+<script>
+
+
+    function updateItem(id) {
+        window.history.go("/genero/update/"+id)
+        //location.replace();
+/*
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        const request = new Request(
+        "/genero/update/"+id,
+        {headers: {'X-CSRFToken': csrftoken}}
+        );
+        fetch(request, {
+            method: 'put',
+            mode: 'same-origin'
+        }).then(function(response) {
+            location.replace("/genero/update")
+           //alert("Informação apagada com sucesso");
+        });
+*/
+    }
+</script>
+
+</body>
+</html>

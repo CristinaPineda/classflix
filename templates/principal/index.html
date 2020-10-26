@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>CRISflix</title>
+
+        <link href="{% static 'css/principal.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/menu.css' %}" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+    <div id="crisflix"><a href="https://fontmeme.com/netflix-font/"><img src="https://fontmeme.com/permalink/200813/7f16c487dc568f70a735fcbddfcb766f.png" alt="netflix-font" border="0"></a></div>
+    {% include "../menu.html" %}
+
+         <main>
+            <marquee behavior="slide" direction="down" scrollmount="80">
+            <h1 class="título"><a href="https://fontmeme.com/netflix-font/"><img src="https://fontmeme.com/permalink/200813/1b3d820d0df94b276e46facaaec0b546.png" alt="netflix-font" border="0"></a></h1>
+            </marquee>
+                <div id="r">Repositório de classes</div>
+         </main>
+
+
+    </body>
+</html>

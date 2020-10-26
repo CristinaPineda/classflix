@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-image: linear-gradient( to right,blue, red );
+
+}
+#r {
+    float: left;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    font-size: 20px;
+    padding: 50px;
+    font-family: Consolas;
+    margin: 0;
+
+}
+
+#top {
+    font-family: Consolas;
+    font-size: 20;
+    color; black;
+    font-weight: bold;
+    margin: 10;
+    background: black;
+
+}
+
+#crisflix {
+    background: black;
+}
+
+.título {
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+    font-family: Consolas;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.6);
+}
+

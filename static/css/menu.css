@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    border-width: 5px;
+    border-style: dashed;
+    border-right-style: none;
+    border-left-style: none;
+    border-color: white;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Consolas;
+    font-size: 20px;
+
+}
+
+li a:hover {
+    font-weight: bolder;
+    background: darkgray;
+}
+
